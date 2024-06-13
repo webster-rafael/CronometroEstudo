@@ -9,8 +9,8 @@ export function Lista() {
   };
 
   return (
-    <aside className="flex flex-col w-full h-full py-2 px-3">
-      <h2 className="text-center py-1">Estudos do dia</h2>
+    <aside className="flex flex-col w-full h-[400px] sm:h-full py-9  sm:py-2 sm:px-3">
+      <h2 className="text-center sm:text-base text-sm py-1">Estudos do dia</h2>
       <ul className="flex flex-col px-2 gap-3 overflow-auto custom-scrollbar py-1">
         {tarefas.map((item) => (
           <li
@@ -67,7 +67,7 @@ export function Lista() {
               ) : null}
             </div>
             <div className="flex justify-between items-end">
-              <span>{`${
+              <span className="sm:text-base text-sm">{`${
                 contando && selecionado && selecionado.id === item.id
                   ? "Contando..."
                   : item.completado

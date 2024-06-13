@@ -11,11 +11,11 @@ export function Relogio({ tempo }: tempoProps) {
   const [segundoDezena, segundoUnidade] = String(segundos).padStart(2, '0');
   return (
     <>
-      <span className="bg-zinc-950 text-9xl rounded-lg">{minutoDezena}</span>
-      <span className="bg-zinc-950 text-9xl rounded-lg">{minutoUnidade}</span>
-      <span className=" text-6xl">:</span>
-      <span className="bg-zinc-950 text-9xl rounded-lg">{segundoDezena}</span>
-      <span className="bg-zinc-950 text-9xl rounded-lg">{segundoUnidade}</span>
+      <span className="bg-zinc-950 text-7xl sm:text-9xl rounded-lg">{minutoDezena}</span>
+      <span className="bg-zinc-950 text-7xl sm:text-9xl rounded-lg">{minutoUnidade}</span>
+      <span className=" text-7xl sm:text-6xl">:</span>
+      <span className="bg-zinc-950 text-7xl sm:text-9xl rounded-lg">{segundoDezena}</span>
+      <span className="bg-zinc-950 text-7xl sm:text-9xl rounded-lg">{segundoUnidade}</span>
     </>
   );
 }

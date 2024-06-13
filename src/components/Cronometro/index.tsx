@@ -27,12 +27,12 @@ export function Cronometro() {
   }
 
   return (
-    <div className="w-full flex flex-col gap-2 col-span-2 py-10 px-5">
-      <p className="text-center">Escolha um estudo e inicie o cronômetro</p>
-      <div className="flex gap-1 justify-center items-center px-3 py-2 bg-zinc-800 rounded-lg">
+    <div className="w-full flex flex-col gap-2 pt-16 sm:py-10 sm:px-5">
+      <p className="text-center sm:text-base text-sm">Escolha um estudo e inicie o cronômetro</p>
+      <div className="sm:w-full flex gap-1 justify-center items-center px-3 py-2 bg-zinc-800 rounded-lg">
         <Relogio tempo={tempo} />
       </div>
-      <div className="h-12 col-span-2 w-full flex justify-center items-center">
+      <div className="h-12 w-full flex justify-center items-center">
         <Botao classeContando={`${contando ? 'bg-red-500' : 'bg-gradient-to-r from-pink-600  to-blue-600'}`} onClick={() => regressiva(tempo)} texto={contando ? (
             <>
             <svg

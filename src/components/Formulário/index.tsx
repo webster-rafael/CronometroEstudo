@@ -7,11 +7,11 @@ export function Formulario() {
 
   return (
     <form
-      className="w-full grid grid-cols-2 gap-2 col-span-2 py-10 px-5"
+      className="w-full sm:grid sm:grid-cols-2 sm:gap-2 col-span-2 py-10 px-2 sm:px-5"
       onSubmit={handleSubmit}
     >
-      <div className="flex flex-col w-full gap-4">
-        <label htmlFor="tarefa">Adicione um novo estudo</label>
+      <div className="flex flex-col w-full gap-1 sm:gap-4">
+        <label className="text-sm sm:text-base" htmlFor="tarefa">Adicione um novo estudo</label>
         <input
           onChange={(e) => handleEstudo(e.target.value)}
           className="w-full bg-zinc-800 py-2 px-1 text-sm rounded-lg border border-white/30"
@@ -23,8 +23,8 @@ export function Formulario() {
           required
         />
       </div>
-      <div className="flex flex-col gap-4">
-        <label>Tempo</label>
+      <div className="flex items-center flex-col gap-1 sm:gap-4 pt-1 sm:pt-0">
+        <label className="flex sm:text-base text-sm">Tempo</label>
         <input
           className="w-full bg-zinc-800 py-2 px-1 text-sm rounded-lg border border-white/30"
           type="time"
