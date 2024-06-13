@@ -14,7 +14,7 @@ export function Formulario() {
         <label className="text-sm sm:text-base" htmlFor="tarefa">Adicione um novo estudo</label>
         <input
           onChange={(e) => handleEstudo(e.target.value)}
-          className="w-full bg-zinc-800 py-2 px-1 text-sm rounded-lg border border-white/30"
+          className="w-full  bg-zinc-800 py-2 px-1 text-xs sm:text-sm rounded-lg border border-white/30"
           type="text"
           value={estudo}
           name="tarefa"

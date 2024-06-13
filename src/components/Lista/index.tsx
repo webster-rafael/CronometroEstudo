@@ -67,7 +67,7 @@ export function Lista() {
               ) : null}
             </div>
             <div className="flex justify-between items-end">
-              <span className="sm:text-base text-sm">{`${
+              <span className="sm:text-base text-xs">{`${
                 contando && selecionado && selecionado.id === item.id
                   ? "Contando..."
                   : item.completado
