@@ -43,7 +43,7 @@ export const TarefasContext = createContext<TarefasContextType>({
 
 export const TarefasProvider = ({ children }: TarefasProviderProps) => {
   const [estudo, setEstudo] = useState("");
-  const [tempo, setTempo] = useState("00:00");
+  const [tempo, setTempo] = useState("00:00:00");
   const [tarefas, setTarefas] = useState<tarefasProps[]>(() => {
     const storedTarefas = localStorage.getItem('tarefas');
     return storedTarefas ? JSON.parse(storedTarefas) : [];
@@ -72,7 +72,7 @@ export const TarefasProvider = ({ children }: TarefasProviderProps) => {
       },
     ]);
     setEstudo("");
-    setTempo("00:00");
+    setTempo("00:00:00");
   };
 
   function selecionaTarefa(tarefaSelecionada: tarefasProps) {
