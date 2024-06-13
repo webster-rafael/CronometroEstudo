@@ -23,7 +23,7 @@ export function Formulario() {
           required
         />
       </div>
-      <div className="flex items-center flex-col gap-1 sm:gap-4 pt-1 sm:pt-0">
+      <div className="flex sm:items-center flex-col gap-1 sm:gap-4 pt-1 sm:pt-0">
         <label className="flex sm:text-base text-sm">Tempo</label>
         <input
           className="w-full bg-zinc-800 py-2 px-1 text-sm rounded-lg border border-white/30"
